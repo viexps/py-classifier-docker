@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "py-classifier-docker"
+version = "0.1.0"
+description = ""
+authors = ["VT <green.spot1256@fastmail.com>"]
+readme = "README.md"
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = "^3.10,<3.12"
+fastapi = "^0.82.0"
+uvicorn = { extras = ["standard"], version = "^0.18.3" }
+numpy = "^1.23.2"
+pandas = "^1.4.4"
+scipy = "^1.9.1"
+scikit-learn = "^1.1.2"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=12.0"]
+build-backend = "poetry.core.masonry.api"
